@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
-            app:elevation="0dp"
+            app:elevation="0dip"
             >
 
 
@@ -44,10 +44,12 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationBar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:headerLayout="@layout/drawer_header"
+        android:layout_gravity="start"
+        app:theme="@style/NavigationViewStyle"
+        app:itemTextAppearance="@style/PoppinsTextAppearance"
         app:menu="@menu/menu_drawer"
-        android:layout_gravity="start" />
+        />
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -65,10 +65,10 @@ class HomeRecyclerAdaptor(private var restaurants: ArrayList<Food>, val context:
 
         if (listOfFav.isNotEmpty() && listOfFav.contains(resObject.id.toString())){
 
-            p0.imgFoodImage.setImageResource(R.drawable.ic_action_fav_checked)
+            p0.favImage.setImageResource(R.drawable.ic_action_fav_checked)
 
         }else{
-            p0.imgFoodImage.setImageResource(R.drawable.ic_action_fav)
+            p0.favImage.setImageResource(R.drawable.ic_action_fav)
         }
 
         p0.favImage.setOnClickListener {
@@ -117,7 +117,7 @@ class HomeRecyclerAdaptor(private var restaurants: ArrayList<Food>, val context:
         val txtFoodRating = view.findViewById(R.id.txtFoodRating) as TextView
         val txtFoodPrice = view.findViewById(R.id.txtFoodPrice) as TextView
         val cardFood = view.findViewById(R.id.cardRestaurant) as CardView
-        val favImage = view.findViewById(R.id.imgFoodImage) as ImageView
+        val favImage = view.findViewById(R.id.imgIsFav) as ImageView
     }
 
     class DBAsyncTask(context: Context, val restaurantEntity: FoodEntity, val mode: Int) :

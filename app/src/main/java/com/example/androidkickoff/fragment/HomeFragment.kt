@@ -163,9 +163,9 @@ class HomeFragment : Fragment() {
 
             val builder: AlertDialog.Builder? = AlertDialog.Builder(context)
             builder?.setTitle("Sort By?")
-//            builder?.setSingleChoiceItems(R.array.filters, checkedItem) { _, isChecked ->
-//                checkedItem = isChecked
-//            }
+            builder?.setSingleChoiceItems(R.array.filters, checkedItem) { _, isChecked ->
+                checkedItem = isChecked
+            }
             builder?.setPositiveButton("Ok") { _, _ ->
 
                 when (checkedItem) {

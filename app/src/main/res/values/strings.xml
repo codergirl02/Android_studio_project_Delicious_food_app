@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FoodBlog</string>
+    <string name="app_name">DeliciousFood</string>
     <string name="signup_now">Don\'t have an account? signup now</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="username">Username or email</string>
@@ -27,5 +27,11 @@
     <string name="faq_answer_six">A.6 You will be able to download the certificate once you complete your training and
         take the final test.
     </string>
+
+    <array name="filters">
+        <item>Cost(Low to High)</item>
+        <item>Cost(High to Low)</item>
+        <item>Rating</item>
+    </array>
 
 </resources>
